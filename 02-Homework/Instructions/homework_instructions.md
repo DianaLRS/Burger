@@ -48,13 +48,13 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### App Setup
 
-1. Create a GitHub repo called `burger` and clone it to your computer.
+1. Create a GitHub repo called `burger` and clone it to your computer. +
 
 2. Make a package.json file by running `npm init` from the command line.
 
 3. Install the Express npm package: `npm install express`.
 
-4. Create a server.js file.
+4. Create a server.js file. +
 
 5. Install the Handlebars npm package: `npm install express-handlebars`.
 
