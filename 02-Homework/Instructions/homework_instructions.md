@@ -70,12 +70,12 @@ Having an active and healthy commit history on GitHub is important for your futu
 2. In the `db` folder, create a file named `schema.sql`. Write SQL queries +
 this file that do the following:
 
-   * Create the `burgers_db`.
-   * Switch to or use the `burgers_db`.
-   * Create a `burgers` table with these fields:
-     * **id**: an auto incrementing int that serves as the primary key.
-     * **burger_name**: a string.
-     * **devoured**: a boolean
+   * Create the `burgers_db`.+
+   * Switch to or use the `burgers_db`.+
+   * Create a `burgers` table with these fields:+
+     * **id**: an auto incrementing int that serves as the primary key.+
+     * **burger_name**: a string.+
+     * **devoured**: a boolean+
 
 3. Still in the `db` folder, create a `seeds.sql` file. In this file,+ write insert queries to populate+ the `burgers` table with at least three entries.
 
@@ -109,9 +109,9 @@ this file that do the following:
 
    * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
 
-     * `selectAll()`
-     * `insertOne()`
-     * `updateOne()`
+     * `selectAll()`+
+     * `insertOne()`+
+     * `updateOne()`+
 
    * Export the ORM object in `module.exports`. +
 
@@ -123,7 +123,7 @@ this file that do the following:
 
     * Inside `burger.js`, import `orm.js` into `burger.js` +
 
-    * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
+    * Also inside `burger.js`, create the code that will call the ORM functions using burger specific+ input for the ORM.
 
     * Export at the end of the `burger.js` file. +
 
