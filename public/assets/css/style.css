@@ -1,0 +1,79 @@
+    body {
+        background-color: black;
+    }
+    
+    article {
+        border: solid whitesmoke 1px;
+    }
+    
+    .jumbotron {
+        background-color: rgb(37, 35, 35);
+        color: whitesmoke;
+        margin-bottom: 30px;
+    }
+    
+    .jumbo-header {
+        max-width: fit-content;
+        border: solid, white, 1px;
+    }
+    
+    .header {
+        font-family: 'Teko', sans-serif;
+        font-weight: 700;
+        font-size: 5rem;
+        text-align: center;
+        padding: 0px;
+        word-spacing: 30px;
+        margin-top: 50px;
+        margin-right: 80px;
+        ;
+    }
+    
+    .logo {
+        /* margin-top: 100px; */
+        width: 150px;
+        height: 150px;
+        border: solid white 1px;
+        margin-right: -100px;
+    }
+    
+    #logo-left {
+        margin-left: 100px;
+    }
+    
+    h2 {
+        color: whitesmoke;
+        text-align: center;
+        font-family: 'Teko', sans-serif;
+    }
+    
+    hr {
+        padding: 0px;
+        margin-top: 10px;
+        background-color: whitesmoke;
+        ;
+    }
+    
+    .list-group-item {
+        height: 90px;
+        width: 700px;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+    
+    footer {
+        background-color: rgb(37, 35, 35);
+        margin: auto;
+        text-align: center;
+        color: whitesmoke;
+        margin-top: 20px;
+        font-family: 'Teko', sans-serif;
+    }
+    
+    .form-container {
+        border: solid whitesmoke 1px;
+    }
+    
+    .create-form {
+        align-self: center;
+    }

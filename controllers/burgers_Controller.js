@@ -9,15 +9,15 @@ var burger = require("../models/burger.js");
 
 router.get("/", function(req, res) {
     burger.all(function(data) {
-        var hbsObject = {
+        var handlebarObject = {
             burgers: data
         };
-        console.log(hbsObject);
-        res.render("index", hbsObject);
+        console.log(handlebarObject);
+        res.render("index", handlebarObject);
     });
 });
 
-router.post("/burgers", function(req, res) {
+router.post("/api/burgers", function(req, res) {
     burger.insert([
         "burger_name", "devoured"
 
@@ -26,11 +26,11 @@ router.post("/burgers", function(req, res) {
         req.body.burger_name, req.body.devoured
     ], function(result) {
         // Send back the ID of the new 
-        res.json({ id: result.insertId });
+        // res.json({ id: result.insertId })
         res.redirect("/")
     });
 });
-router.put("/burgers/:id", function(req, res) {
+router.put("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
 
     console.log("condition", condition);

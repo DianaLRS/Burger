@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+	<title>Eat-da-burger</title>
 	<meta charset="UTF-8">
-		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-		<title>EAT DA BURGER</title>
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="/assets/js/burgers.js"></script>
-	</head>
-	<body>
-		{{{ body }}}
-	</body>
+	{{!-- bootstrap --}}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-theme.min.css">
+	{{!-- Google Fonts --}}
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	{{!-- Our CSS --}}
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+	<section class="jumbotron">
+		<section class="row">
+				<section class="col-sm-3 logo" id="logo-left">
+				<img src="/assets/images/burger-logo2.jpg" width="200px" height="200px" alt="burger-toon">
+			</section>
+			<section class="col-sm-6" id="jumbo-header">
+				<h1 class="header">EAT <span style="word-spacing: 50px;">DA</span> BURGER</h1>
+			</section>
+			<section class="col-sm-3 logo" >
+				<img src="/assets/images/burger-logo2.jpg" width="200px" height="200px" alt="burger-toon">
+			</section>
+		</section>
+	</section>
+	{{{ body }}}
+
+	<footer>
+		Github @ dlramos194
+	</footer>
+	{{!-- Linking JQUERY --}}
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	{{!-- Our JS file --}}
+	<script src="/assets/js/burgers.js"></script>
+</body>
+
 </html>
