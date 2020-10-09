@@ -1,51 +1,62 @@
+<section class="container">
+
+
   <section clas="row">
-  <section class="col-sm-6">
-<article class="ordered">
-    <h2> Fresh From the Grill</h2>
-    <hr class="my-4">
-    {{#each burgers}}
-    {{#unless devoured}}
-    <ul class="list-group">
-      <li class="list-group-item">
-        <p>{{id}}
-          {{burger_name}}
-          <button class="btn btn-dark change-devoured" data-id="{{id}}" data-newDevoured="{{devour}}">Devour
-            it!</button>
-        </p>
-      </li>
-    </ul>
-    {{/unless}}
-    {{/each}}
+    <section class="col-sm-6">
+      <article class="ordered">
+        <h2> Fresh From the Grill</h2>
+        <hr class="my-4">
+        {{#each burgers}}
+        {{#unless devoured}}
+        <ul class="list-group">
+          <li class="list-group-item">
+            <p>{{id}}
+              {{burger_name}}
+              <button class="btn btn-dark change-devoured" data-id="{{id}}" data-newDevoured="{{devour}}">Devour
+                it!</button>
+            </p>
+          </li>
+        </ul>
+        {{/unless}}
+        {{/each}}
+      </article>
+    </section>
+  </section>
+
+  <section clas="row">
+    <section class="col-sm-6">
+      <article class="finished">
+        <h2>Devoured Burgers</h2>
+        <hr class="my-4">
+        {{#each burgers}}
+        {{#if devoured}}
+        <ul class="list-group">
+          <li class="list-group-item eaten">
+            <p>{{id}}</p>
+            <p>{{burger_name}}</p>
+          </li>
+        </ul>
+        {{/if}}
+        {{/each}}
+    </section>
+  </section>
   </article>
-  </section>
-  </section>
+
 
   <section clas="row">
-  <section class="col-sm-6">
-<article class="finished">
-    <h2>Devoured Burgers</h2>
-    <hr class="my-4">
-    {{#each burgers}}
-    {{#if devoured}}
-    <ul class="list-group">
-      <li class="list-group-item eaten">
-        <p>{{id}}</p>
-        <p>{{burger_name}}</p>
-      </li>
-    </ul>
-    {{/if}}
-    {{/each}}
+    <section class="col-sm-6">
+      <article class="form-container">
+        <h2>Order a New Burger</h2>
+        <hr class="my-4">
+        <section class="row" id="input">
+          <section class="col-sm-12" id="order-burger">
+            <input type="text" id="burg" name="burger_name" placeholder="Burger Name">
+            <button type="submit" class="btn btn-light">Order</button>
+
+          </section>
+      </article>
+    </section>
   </section>
-  </section>
-</article>
 
 
-
-
-<article class="form-container">
-<h2>Order a New Burger</h2>
-<section
- <input type="text" id="burg" name="burger_name" placeholder="Burger Name">
-  <button type="submit" class="btn btn-light">Order</button>
-
-</container>
+</section>

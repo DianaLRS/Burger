@@ -2,8 +2,9 @@
         background-color: black;
     }
     
-    article {
-        border: solid whitesmoke 1px;
+    .container {
+        margin-left: 670px;
+        ;
     }
     
     .jumbotron {
@@ -70,10 +71,7 @@
         font-family: 'Teko', sans-serif;
     }
     
-    .form-container {
-        border: solid whitesmoke 1px;
-    }
-    
-    .create-form {
-        align-self: center;
+    .input {
+        margin-left: 100px;
+        ;
     }
